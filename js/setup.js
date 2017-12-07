@@ -53,9 +53,9 @@
 
   var generateWizard = function () {
     var wizard = {
-      name: names[getRandomNumber(0, 7)] + ' ' + surnames[getRandomNumber(0, 7)],
-      coatColor: coatColors[getRandomNumber(0, 5)],
-      eyesColor: eyesColors[getRandomNumber(0, 4)]
+      name: names[getRandomNumber(0, (names.length - 1))] + ' ' + surnames[getRandomNumber(0, (surnames.length - 1))],
+      coatColor: coatColors[getRandomNumber(0, (coatColors.length - 1))],
+      eyesColor: eyesColors[getRandomNumber(0, (eyesColors.length - 1))]
     };
     wizards.push(wizard);
   };
